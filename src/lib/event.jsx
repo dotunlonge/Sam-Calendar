@@ -158,11 +158,10 @@ class CustomPaginationActionsTable extends React.Component {
         className={classes.root}
         id="event-wrapper"
         style={{
-          marginTop: height / 3.5,
-          float: "left",
+          height: "100%",
           margin: 0,
-          width: "55%",
-          minWidth: width,
+
+          width: "100%",
           borderRadius: 0,
           boxShadow: "none"
         }}

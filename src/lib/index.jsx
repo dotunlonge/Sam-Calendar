@@ -109,10 +109,9 @@ class MySuperCoolComponent extends Component {
       { events, eventToggled, height, width } = this.props,
       { selected, defaultSelected, showEventsView } = this.state;
 
-    return (
-      <div id="wrapper">
+    return [
+      <div key={1} style={{ float: "left" }}>
         <InfiniteCalendar
-          className="infinite-calendar-dadslogkoakasaskcomacmoo"
           width={width}
           height={height}
           Component={MultipleDatesCalendar}
@@ -125,6 +124,16 @@ class MySuperCoolComponent extends Component {
             }
           }}
         />
+      </div>,
+      <div
+        key={2}
+        style={{
+          marginTop: height / 2,
+          float: "left",
+          width: "55%",
+          minWidth: width
+        }}
+      >
         {showEventsView === true && (
           <Event
             height={height}
@@ -134,7 +143,7 @@ class MySuperCoolComponent extends Component {
           />
         )}
       </div>
-    );
+    ];
   }
 }
 

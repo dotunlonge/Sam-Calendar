@@ -1,12 +1,22 @@
-# React component boilerplate
+# Modified Infinite Calendar
 
-This is a simple boilerplate project for building a react component package for npm. It is suitable for building any type of UI component or library (like for example a dropdown menu or a toggle-switch). The project contains a correctly transpiled folder for the component library (easy to get wrong) as well as a demo page for showcasing it. The demo can easily be uploaded to _GitHub Pages_. This boilerplate project is meant to be minimal and easy to understand. Linting, testing, prettier etc have been purposefully left out. It does not include a UMD build, as those aren't really used anymore.
-
-If you are new to building React components for npm you should check out [this guide](https://medium.com/@markus.s.englund/a-guide-to-building-a-react-component-for-npm-68f03b314753).
+This is a forked npm version of the infinite calendar from https://github.com/clauderic/react-infinite-calendar,
+It's been modified to have an event view that displays event data for a particular day from a datasource on clicking a date on the calendar.
 
 ## How it is structured
 
 The source code has two separate parts – the library and the documentation (demo) page. Both are written in ES6 and JSX, and therefore have to be transpiled by Babel but in different ways.
+
+## How was it modified
+
+A forked version of the actual infinite calendar in the form of an NPM component had a single line of code modified to allow for a specification to occur . i.e. having a vertically color split date in terms of the calendar.
+
+the specific modification can be seen here:
+https://github.com/DotunLonge/react-infinite-calendar/commit/6dd888abd3d0b1102fd2038f0038ea6ade6b46d7 and
+https://github.com/DotunLonge/react-infinite-calendar/commit/fcc9dcbcbe77eee630bdd1b51c42c6b8784a7d18
+
+after this, i commenced building my own npm module utilizing my forked version of the react-inifinite-calendar as a child component.
+this is done by adding it to my package.json file.
 
 ### Component library transpilation
 
@@ -17,45 +27,6 @@ The library source code, which is located in `src/lib`, is transpiled with Babel
 The demo app source code lives inside the `src/docs` folder. It is transpiled, bundled and minified by Webpack and Babel into the `docs` folder in the root directory (by running `npm run docs:prod`). This is a completely normal react app with minimal configuration that imports the component library. It has two purposes: 1. To have a way of inspecting your components while you develop the library, and 2. As a demo to showcase to people who try to figure out what your library does.
 
 The reason that the folder doesn't have a logical name like `demo` is that GitHub Pages requires it to be called `docs` for some reason...
-
-## Getting started
-
-Follow these steps to get started developing your own react component:
-
-* `git clone https://github.com/yogaboll/react-npm-component-starter.git`
-* `npm install`
-* `npm run dev` to transpile both the lib and docs folder in watch mode and serve the docs page for you.
-* Go to http://127.0.0.1:8000 to see the demo in action. Whenever you change the code in either src/lib or src/docs, the page will automatically update.
-
-Remember to reset the git history:
-
-* `rm -rf .git`
-* `git init`
-* `git add .`
-* `git commit -m "setup project"`
-
-When you have completed development and want to publish to npm:
-
-* Change the "name" field in the package.json file (the npm package will get this name), as well "description", "author" and any other fields that need to change.
-* `npm publish`
-* Go to npmjs.com/package/[YOUR COMPONENT NAME]/ to confirm that it has been published.
-
-Host demo on GitHub Pages:
-
-* `npm run docs:prod` - Make a production bundle of the demo app.
-* Commit your changes to git and push to your GitHub repository.
-* On your GitHub repo page, click the **settings** tab and scroll down to the **GitHub Pages** heading. Pick `master branch /docs folder` in the **source** dropdown, And BOOM, your demo page is already live on the internet for free.
-* Note: Sometimes it might take about an hour for the page to actually start hosting. Adding /index.html after the url works instantly for whatever reason.
-
-## What about CSS?
-
-### Inline styles
-
-The easiest option is to use the style attribute. Like this for example:
-
-`<button style={{background: "blue", width: 20 }} >test</button>`
-
-This is a clean approach since the user of your package doesn't have to separately import a css file. The downside is that you can't use a bunch of css features: pseudo-selectors like `:focus` and `:hover`, media-queries and some prefixed css-properties, which can be a deal breaker.
 
 ### Separate CSS file
 

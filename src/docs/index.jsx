@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "react-dom";
-import MyComponent from "../../lib";
+import MyComponent from "sam-calendar";
 import "./styles.css";
 
 class Demo extends React.Component {

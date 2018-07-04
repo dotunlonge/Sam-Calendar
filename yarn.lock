@@ -5952,6 +5952,20 @@ react-event-listener@^0.6.0:
     prop-types "^15.6.0"
     warning "^4.0.1"
 
+"react-infinite-calendar@git+https://github.com/DotunLonge/react-infinite-calendar.git":
+  version "2.3.1"
+  uid "1cdedbcb372a98a3eb4bbe80fe7f06fcf3416daf"
+  resolved "git+https://github.com/DotunLonge/react-infinite-calendar.git#1cdedbcb372a98a3eb4bbe80fe7f06fcf3416daf"
+  dependencies:
+    classnames "^2.2.5"
+    date-fns "^1.27.2"
+    dom-helpers "^3.2.1"
+    global "^4.3.2"
+    prop-types "^15.5.7"
+    react-tiny-virtual-list "^2.0.0"
+    react-transition-group "^1.1.3"
+    recompose "^0.22.0"
+
 "react-infinite-calendar@https://github.com/DotunLonge/react-infinite-calendar.git":
   version "2.3.1"
   resolved "https://github.com/DotunLonge/react-infinite-calendar.git#1cdedbcb372a98a3eb4bbe80fe7f06fcf3416daf"
@@ -6406,6 +6420,16 @@ safe-regex@^1.1.0:
 "safer-buffer@>= 2.1.2 < 3":
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
+
+sam-calendar@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/sam-calendar/-/sam-calendar-0.1.0.tgz#0b833a096374a1d2f422fda65f82ad0a11b0c6e9"
+  dependencies:
+    "@material-ui/core" "^1.3.1"
+    "@material-ui/icons" "^1.1.0"
+    build "^0.1.4"
+    moment "^2.22.2"
+    react-infinite-calendar "https://github.com/DotunLonge/react-infinite-calendar.git"
 
 sax@^1.2.4, sax@~1.2.1:
   version "1.2.4"

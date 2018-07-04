@@ -45,6 +45,7 @@
     "@material-ui/icons": "^1.1.0",
     "build": "^0.1.4",
     "moment": "^2.22.2",
-    "react-infinite-calendar": "https://github.com/DotunLonge/react-infinite-calendar.git"
+    "react-infinite-calendar": "https://github.com/DotunLonge/react-infinite-calendar.git",
+    "sam-calendar": "^0.1.0"
   }
 }
