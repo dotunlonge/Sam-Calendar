@@ -5,8 +5,7 @@ import InfiniteCalendar, {
 } from "react-infinite-calendar";
 import "react-infinite-calendar/styles.css";
 import moment from "moment";
-import "./style.css";
-import Event from "./event.jsx";
+import Event from "./event";
 
 const MultipleDatesCalendar = withMultipleDates(Calendar);
 
