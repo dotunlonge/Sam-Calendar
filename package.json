@@ -1,7 +1,7 @@
 {
-  "name": "react-component-example-project",
+  "name": "sam-calendar",
   "version": "0.1.0",
-  "description": "A minimal boilerplate for building a react component for npm, including a demo page.",
+  "description": "A modified version of the infinite calendar that shows a list of events",
   "main": "lib/index.js",
   "scripts": {
     "dev": "concurrently \"npm run lib:watch\" \"npm run docs\"",
@@ -34,10 +34,17 @@
     "webpack-cli": "^2.0.15",
     "webpack-dev-server": "^3.1.3"
   },
-  "author": "Markus Englund <markus.s.englund@gmail.com>",
+  "author": "Dotun Longe <oludotunlonge@gmail.com",
   "homepage": "https://github.com/yogaboll/react-npm-component-starter",
   "repository": {
     "type": "git",
     "url": "git@github.com:yogaboll/react-npm-component-starter.git"
+  },
+  "dependencies": {
+    "@material-ui/core": "^1.3.1",
+    "@material-ui/icons": "^1.1.0",
+    "build": "^0.1.4",
+    "moment": "^2.22.2",
+    "react-infinite-calendar": "https://github.com/DotunLonge/react-infinite-calendar.git"
   }
 }
