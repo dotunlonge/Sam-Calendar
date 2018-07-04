@@ -35,7 +35,7 @@
     "webpack-dev-server": "^3.1.3"
   },
   "author": "Dotun Longe <oludotunlonge@gmail.com",
-  "homepage": "https://github.com/yogaboll/react-npm-component-starter",
+  "homepage": "https://github.com/DotunLonge/Sam-Calendar",
   "repository": {
     "type": "git",
     "url": "git@github.com:yogaboll/react-npm-component-starter.git"
